@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="style-responsive.css">
+		<!-- End CSS -->
+		<!-- meta elementi -->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="Brzo pronađite najpopularnije Božićne pjesme i zapjevajte s najbližima!">
+        <meta name="keywords" content="christmas, božić, carols, pjesme, božićne pjesme, song, pjesma, music, glazba, singing, pjevanje, snow, snijeg, holiday, praznik, holidays, praznici, jingle bells, zvončići, bells, zvona, theme, tema, santa, djed mraz, santa claus, lyrics, presents, pokloni, family, obitelj">
+		
+		<meta name="author" content="Matija Milaković">
+		<!-- kraj meta elemenata -->
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+		<!-- End Google Fonts -->
+		<title>Svim na zemlji - Božićne Pjesme</title>
+	</head>
+<body>
+	<header>
+	<div class="hero-image"></div>
+	</header>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Početna</a>
+  <a href="pjesme.html">Pjesme</a>
+  <a href="kontakt.html">Kontakt</a>
+  <a href="o-nama.html">O nama</a>
+  <a href="galerija.html">Galerija</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div style="padding-left:16px">
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<main>
+		<center><h1>Svim na zemlji</h1>
+		<div id="pjesme_galerija">
+			<figure id="1">
+				<img src="pjesme/pjesme_thumbnail_1_resized.jpg" alt="title picture 1" class="center" title="title picture 1">
+				<figcaption>Božićni Plišanci<figcaption>
+			</figure>
+			<figure id="2">
+				<img src="pjesme/pjesme_thumbnail_3_resized.jpg" alt="title picture 2" class="center" title="title picture 2">
+				<figcaption>Božićno Drvce<figcaption>
+			</figure>
+			<figure id="3">
+				<img src="pjesme/pjesme_thumbnail_6_resized.jpg" alt="title picture 2" class="center" title="title picture 2">
+				<figcaption>Krist i Božićna Zvijezda<figcaption>
+			</figure>
+		</div></center>
+		<hr>
+		<div class="pjesma">
+			<center><h2>Klasična, tradicionalna božićna pjesma koja s lakoćom donosi duh blagdana</h2>
+			<p class="description">Snažni osjećaji mira, blagostanja i ljubavi su motiv ove pjesme</p>
+			<p>Svim na zemlji mir, veselje,</p>
+			<p>Budi polag Božje volje.</p>
+			<p>To sad nebo navješćuje</p>
+			<p>I glas s neba potvrđuje.</p>
+			<p>Dobre volje svaka duša</p>
+			<p>grijeha neka već ne kuša</p>
+			<p>Nego hvali, diči Boga,</p>
+			<p>Što je poslo Sinka svoga.</p>
+			<p>Sinka svoga, Boga moga,</p>
+			<p>S Ocem, Duhom jednakoga</p>
+			<p>Duhom Svetim začetoga</p>
+			<p>Od Djevice rođenoga.</p></center>
+			<p><a href="pjesme.html">Natrag na listu pjesama</a></p>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2020 Matija Milaković <a href="https://github.com/Kreateer?tab=repositories"><img src="img/GitHub-Mark-Light-32px.png" title="Github" alt="Github"></a></p>
+	</footer>
+</body>
+</html>
