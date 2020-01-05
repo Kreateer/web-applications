@@ -17,7 +17,7 @@
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
 		<!-- End Google Fonts -->
-		<title>Početna stranica - Božićne Pjesme</title>
+		<title>Kontakt - Božićne Pjesme</title>
 	</head>
 <body>
 	<header>
@@ -46,16 +46,35 @@ function myFunction() {
   }
 }
 </script>
-<main>
-		<h1>Božićne Pjesme - Radost i veselje s najmilijima</h1>
-		<figure>
-			<img src="img/christmas-background.jpg" alt="Božić" title="Božić">
-			<figcaption>Vrijeme zimskih blagdana je vrijeme darivanja, ljubavi i veselja. Neka vaši blagdani zablistaju uz mnoštvo predivnih božićnih pjesama!</figcaption>
-		</figure>
-		<p>Dobrodošli! Na našoj stranici možete pronaći najpopularnije tradicionalne i strane božićne pjesme. </p>
-		<p>Božićne se pjesme temelje na kršćanskim tekstovima i uglavnom se odnose na Kristovo rođenje. Božićne pjesme u crkvene službe uveo je sveti Franjo Asiški u 12. stoljeću.</p>
-		<p>Mnoge su božićne tradicije iz relativno novijeg vremena, poput Djeda Mraza, sobova itd. i nemaju nikakav povijesni odnos prema tradicionalnim božićnim pjesmama. Danas božićne pjesme s temom Djeda Mraza i slicnih blagdanskih likova brzo postaju 'nova' tradicija.</p>
-		<p>Želimo vam Sretan Božić i blagdane pune ljubavi i veselja uz božićne pjesme!</p>
+	<main>
+		<h1>Kontaktirajte nas</h1>
+		<div id="contact">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.9993752788664!2d-147.3465187813449!3d64.75445490050384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x51324d4f91f3e801%3A0x2840219de72fedd1!2sSanta%20Claus%20House!5e0!3m2!1sen!2shr!4v1578234688805!5m2!1sen!2shr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			<form action="action_page.php" id="contact_form" name="contact_form" method="POST">
+				<label for="ime">Ime *</label>
+				<input type="text" id="ime" name="vaseime" placeholder="Vaše ime..." required>
+
+				<label for="prezime">Prezime *</label>
+				<input type="text" id="pzime" name="prezime" placeholder="Vaše prezime..." required>
+				
+				<label for="email">Vaš E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="Vaš E-mail..." required>
+
+				<label for="tupit">Razlog</label>
+				<select id="tupit" name="tupit">
+				  <option value="" selected>Molimo izaberite</option>
+				  <option value="Problem">Problem</option>
+				  <option value="Opci">Opči Upit</option>
+				  <option value="Oglas">Oglašavanje</option>
+				  <option value="Prijedlog">Prijedlog</option>
+				</select>
+
+				<label for="predmet">Opis</label>
+				<textarea id="predmet" name="predmet" placeholder="Napišite nešto.." style="height:200px"></textarea>
+
+				<input type="submit" value="Pošalji">
+			</form>
+		</div>
 	</main>
 	<footer>
 		<p>Copyright &copy; 2020 Matija Milaković <a href="https://github.com/Kreateer?tab=repositories"><img src="img/GitHub-Mark-Light-32px.png" title="Github" alt="Github"></a></p>
